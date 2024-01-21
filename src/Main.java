@@ -12,15 +12,15 @@ import models.Student;
 
 public class Main {
     public static void main(String[] args) {
-        Student s1 = new Student("Ivan", "Ivanov", 2.67);
-        Student s2 = new Student("Amir", "Kurmanbekov", 3.5);
-        Employee e1 = new Employee("Rassul", "Turtulov", "Backend", 700000);
-        Employee e2 = new Employee("Altynbek", "Kabiev", "engineer", 500000);
+        Student student1 = new Student("Nikitav", "Bobylev", 2.43);
+        Student student2 = new Student("Merey", "Ibraim", 3.55);
+        Employee employee1 = new Employee("Alip", "Kenzhebek", "Businessman", 650000);
+        Employee employee2 = new Employee("Ulan", "Torebek", "Military Officer", 250000);
         ArrayList<AbstractPerson> people = new ArrayList<>();
-        people.add(s1);
-        people.add(s2);
-        people.add(e1);
-        people.add(e2);
+        people.add(student1);
+        people.add(student2);
+        people.add(employee1);
+        people.add(employee2);
         Collections.sort(people);
         printData(people);
     }
